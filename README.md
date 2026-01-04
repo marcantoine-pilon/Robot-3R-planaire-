@@ -5,7 +5,6 @@ Projet académique réalisé dans le cadre du cours **MEC1315 – Technologies i
 
 Ce projet implémente un **générateur de trajectoires articulaires** et un **simulateur graphique** pour un robot **3R planaire**, à partir d’une trajectoire cartésienne (x, y), avec prise en compte des **limites articulaires** et d’une stratégie d’**évitement** basée sur le noyau du Jacobien.
 
----
 
 ##  Fonctionnalités principales
 
@@ -25,8 +24,18 @@ Ce projet implémente un **générateur de trajectoires articulaires** et un **s
   - mur fixe
   - trajectoire du bout du robot
 - Export de l’animation en **GIF**
+  
+## 🖼️ Résultats — Animations
 
----
+### Trajectoire sans évitement des limites articulaires
+![Simulation sans évitement](Trajet0_19.gif)
+
+### Trajectoire avec évitement des limites articulaires
+![Simulation avec évitement](Trajet1_19.gif)
+
+### Cas bonus — Trajectoire complexe
+![Simulation bonus](Trajet-bonus_19.gif)
+
 
 ##  Structure du dépôt
 
@@ -74,7 +83,7 @@ Avec évitement des limites articulaires, un terme homogène est ajouté dans le
 
 où `h` pousse les angles vers le centre de leurs limites.
 
----
+
 
 ##  Prérequis
 
@@ -87,8 +96,8 @@ Installation (si nécessaire) :
 ```bash
 pip install numpy matplotlib
 ```
-Répartition des tâches
----------------------
+##  Répartition des tâches
+
 |  | Tâches |
 |---|---|
 | Marc‑Antoine Pilon | <ul><li>Écriture collaborative du script pour le générateur (Generateur_19.py) avec l’aide de l’IA</li><li>Contribution majeure à l’écriture du rapport final</li><li>Remise du travail sur Moodle</li></ul> |
